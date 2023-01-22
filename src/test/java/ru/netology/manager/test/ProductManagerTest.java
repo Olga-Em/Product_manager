@@ -31,7 +31,7 @@ public class ProductManagerTest {
         Product[] expected = {book1};
         Product[] actual = manager.searchBy("book1");
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class ProductManagerTest {
         Product[] expected = {};
         Product[] actual = manager.searchBy("book4");
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -57,7 +57,7 @@ public class ProductManagerTest {
         Product[] expected = {book2, book3};
         Product[] actual = manager.searchBy("book2");
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -70,7 +70,7 @@ public class ProductManagerTest {
         Product[] expected = {book2, book3};
         Product[] actual = repo.removerById(1);
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -82,7 +82,7 @@ public class ProductManagerTest {
         Product[] expected = {smartphone2};
         Product[] actual = manager.searchBy("Iphone");
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
 }
